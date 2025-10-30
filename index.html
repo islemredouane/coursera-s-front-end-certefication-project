@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food, LLC — Our Menu</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-content">
+        <h1 class="brand">Food, LLC</h1>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#chicken">Chicken</a>
+        <a href="#beef">Beef</a>
+        <a href="#sushi">Sushi</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="hero">
+    <h2>Our Menu</h2>
+    <p>Discover delicious meals crafted with passion and flavor</p>
+  </header>
+
+  <!-- Chicken Section -->
+  <section id="chicken" class="menu-section gradient-rose">
+    <div class="section-container">
+      <h3>Chicken</h3>
+      <p class="intro">
+        Our signature chicken dishes are prepared with the finest free-range poultry,
+        marinated in our secret blend of herbs and spices.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h4>Grilled Lemon Herb Chicken</h4>
+          <p>Tender chicken breast marinated in fresh lemon, rosemary, and thyme.</p>
+        </div>
+        <div class="card">
+          <h4>Crispy Buttermilk Fried Chicken</h4>
+          <p>Southern-style fried chicken brined in buttermilk for 24 hours.</p>
+        </div>
+        <div class="card">
+          <h4>Honey Glazed Chicken Wings</h4>
+          <p>Succulent wings tossed in our house-made honey glaze with chili & garlic.</p>
+        </div>
+        <div class="card">
+          <h4>Mediterranean Chicken Skewers</h4>
+          <p>Marinated in olive oil, oregano, and paprika, served with tzatziki.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beef Section -->
+  <section id="beef" class="menu-section gradient-amber">
+    <div class="section-container">
+      <h3>Beef</h3>
+      <p class="intro">
+        Premium cuts of grass-fed beef, aged to perfection and cooked exactly to your preference.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h4>Prime Ribeye Steak</h4>
+          <p>14oz premium ribeye seasoned with sea salt, finished with herb butter.</p>
+        </div>
+        <div class="card">
+          <h4>Braised Short Ribs</h4>
+          <p>Slow-braised in red wine and aromatics until fall-off-the-bone tender.</p>
+        </div>
+        <div class="card">
+          <h4>Wagyu Beef Burger</h4>
+          <p>Premium wagyu beef patty with caramelized onions and aged cheddar.</p>
+        </div>
+        <div class="card">
+          <h4>Beef Wellington</h4>
+          <p>Filet mignon wrapped in puff pastry with mushroom duxelles. Classic perfection.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sushi Section -->
+  <section id="sushi" class="menu-section gradient-teal">
+    <div class="section-container">
+      <h3>Sushi</h3>
+      <p class="intro">
+        Authentic Japanese sushi crafted by our master chef using the freshest ingredients.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h4>Omakase Selection</h4>
+          <p>Chef's choice of 12 pieces of nigiri featuring the day's freshest catch.</p>
+        </div>
+        <div class="card">
+          <h4>Dragon Roll</h4>
+          <p>Tempura shrimp and cucumber topped with avocado and eel sauce.</p>
+        </div>
+        <div class="card">
+          <h4>Tuna Trio Sashimi</h4>
+          <p>Bluefin tuna, toro, and seared tataki served with ponzu sauce.</p>
+        </div>
+        <div class="card">
+          <h4>Rainbow Roll</h4>
+          <p>California roll topped with assorted fish — a colorful celebration of flavor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Food, LLC. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+      menuToggle.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
